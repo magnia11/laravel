@@ -3,11 +3,11 @@
 namespace App\Http\Controllers;
 
 
-class HelloController extends Controller
+class LoginController extends Controller
 {
 public function index(){
-    echo "Hello World";
+    echo "Please log in, or register";
     exit;
 }
 
-} 
+}
