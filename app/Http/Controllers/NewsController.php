@@ -28,9 +28,8 @@ class NewsController extends Controller
 
     public function card($id)
     {
-        $news = $this->news[$id];
-        echo $news['title'];
-        exit;
+        $card = (new News())->getById($id);
+        return view('news.card', ['news' => $card]);
     }
 
 }
