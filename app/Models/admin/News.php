@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Models;
+namespace App\Models\Admin;
 
 
 class News
@@ -50,6 +50,7 @@ class News
         }
         return $news;
     }
+
     public function getById(int $id)
     {
         $news = [];

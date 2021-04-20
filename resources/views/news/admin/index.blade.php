@@ -2,11 +2,11 @@
 
 @section('title')
     @parent
-    Главная
+    Главная админки
 @endsection
 
 @section('content')
-   @foreach($categories as $id => $name)
+@foreach($categories as $id => $name)
     @php
         $url = route('news::list', ['categoryId' => $id])
     @endphp
