@@ -29,10 +29,6 @@ class AppServiceProvider extends ServiceProvider
                 'alias' => 'news::categories'
             ],
             [
-                'title' => 'Отзывы',
-                'alias' => 'feedback::create'
-            ],
-            [
                 'title' => 'Админка',
                 'alias' => 'admin::news::index'
             ],
