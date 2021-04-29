@@ -64,3 +64,5 @@ Route::group([
         ->where('id', '[0-9]+')
         ->name('list');
 });
+
+    Route::get('/db', [\App\Http\Controllers\DbController::class, 'index']);
