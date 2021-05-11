@@ -10,4 +10,4 @@ public function index(){
     exit;
 }
 
-}
+} 
