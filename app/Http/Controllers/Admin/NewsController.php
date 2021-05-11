@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 namespace App\Http\Controllers;
 use App\Models\News;
 class NewsController extends Controller
@@ -55,5 +56,42 @@ class NewsController extends Controller
         $model->save();
 
        return redirect()->route('news::create');
+=======
+
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class NewsController extends Controller
+{
+    public function index()
+    {
+        echo "index";
+        exit;
+    }
+
+    public function create()
+    {
+
+        dd(route('admin::news::create'));
+        echo "create";
+        exit;
+    }
+
+    public function update()
+    {
+
+    }
+
+    public function delete()
+    {
+
+    }
+
+    public function show()
+    {
+
+>>>>>>> main
     }
 }

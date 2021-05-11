@@ -2,7 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\NewsController;
+<<<<<<< HEAD
 use \App\Http\Controllers\FeedbackController;
+=======
+>>>>>>> main
 use App\Http\Controllers\Admin\AdminNewsController;
 
 
@@ -20,6 +23,7 @@ Route::group([
 
     Route::get('/', [NewsController::class, 'index'])
         ->name("categories");
+<<<<<<< HEAD
 
     Route::get('/card/{news}', [NewsController::class, 'card'])
         ->where('news', '[0-9]+')
@@ -54,6 +58,22 @@ Route::group([
         ->name('save');
 
 });
+=======
+
+    Route::get('/card/{id}', [NewsController::class, 'card'])
+        ->where('id', '[0-9]+')
+        ->name('card');
+
+    Route::get('/{categoryId}', [NewsController::class, 'list'])
+        ->where('id', '[0-9]+')
+        ->name('list');
+});
+
+
+
+
+
+>>>>>>> main
 
 /** Админка новостей */
 Route::group([
@@ -74,6 +94,10 @@ Route::group([
     Route::get('/{categoryId}', [AdminNewsController::class, 'list'])
         ->where('id', '[0-9]+')
         ->name('list');
+<<<<<<< HEAD
 });
 
     Route::get('/db', [\App\Http\Controllers\DbController::class, 'index']);
+=======
+});
+>>>>>>> main

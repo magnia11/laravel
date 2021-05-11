@@ -8,6 +8,11 @@ class HelloController extends Controller
 public function index(){
     echo "Hello World";
     exit;
+<<<<<<< HEAD
 }
 
+=======
+>>>>>>> main
 }
+
+} 

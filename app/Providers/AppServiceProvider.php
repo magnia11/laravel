@@ -29,10 +29,13 @@ class AppServiceProvider extends ServiceProvider
                 'alias' => 'news::categories'
             ],
             [
+<<<<<<< HEAD
                 'title' => 'Отзывы',
                 'alias' => 'feedback::create'
             ],
             [
+=======
+>>>>>>> main
                 'title' => 'Админка',
                 'alias' => 'admin::news::index'
             ],

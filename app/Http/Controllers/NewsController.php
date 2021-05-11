@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 
 
 use App\Models\News;
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Facades\View;
+>>>>>>> main
 
 class NewsController extends Controller
 {
@@ -16,6 +20,7 @@ class NewsController extends Controller
 
     public function index()
     {
+<<<<<<< HEAD
         // $result = News::all();
         return view('news.index', ['categories' => $this->categories]);
     }
@@ -30,6 +35,21 @@ class NewsController extends Controller
         return view('news.card', ['model'=>$news]);
        // $card = (new News_old())->getById($id);
        // return view('news.card', ['news' => $card]);
+=======
+        return view('news.index', ['categories' => $this->categories]);
+    }
+
+    public function list($categoryId)
+    {
+        $news = (new News())->getByCategoryId($categoryId);
+        return view('news.list', ['news' => $news]);
+    }
+
+    public function card($id)
+    {
+        $card = (new News())->getById($id);
+        return view('news.card', ['news' => $card]);
+>>>>>>> main
     }
 
 }

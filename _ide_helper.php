@@ -15362,6 +15362,7 @@
      
 }
 
+<<<<<<< HEAD
     namespace Collective\Html { 
             /**
      * 
@@ -16474,6 +16475,8 @@
      
 }
 
+=======
+>>>>>>> main
     namespace Illuminate\Http { 
             /**
      * 
@@ -19769,8 +19772,11 @@ namespace  {
             class Validator extends \Illuminate\Support\Facades\Validator {}
             class View extends \Illuminate\Support\Facades\View {}
             class Flare extends \Facade\Ignition\Facades\Flare {}
+<<<<<<< HEAD
             class Form extends \Collective\Html\FormFacade {}
             class Html extends \Collective\Html\HtmlFacade {}
+=======
+>>>>>>> main
      
 }
 

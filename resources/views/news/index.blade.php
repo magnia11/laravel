@@ -11,7 +11,11 @@
         $url = route('news::list', ['categoryId' => $id])
     @endphp
 
+<<<<<<< HEAD
     <div class="card-title">
+=======
+    <div>
+>>>>>>> main
         <a href="{{$url}}">{{$name}}</a>
     </div>
 
