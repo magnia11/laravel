@@ -2,8 +2,9 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Schema;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -15,7 +16,6 @@ class AppServiceProvider extends ServiceProvider
     {
         //
     }
-
     /**
      * Bootstrap any application services.
      *
@@ -23,6 +23,21 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Schema::defaultStringLength(191);
+        $menu = [
+            [
+                'title' => 'Новости',
+                'alias' => 'news::categories'
+            ],
+            [
+                'title' => 'Отзывы',
+                'alias' => 'feedback::create'
+            ],
+            [
+                'title' => 'Админка',
+                'alias' => 'admin::news::index'
+            ],
+        ];
+
+        View::share('menu', $menu);
     }
 }
